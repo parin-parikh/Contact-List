@@ -1,42 +1,238 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+    color: #009879;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-content {
+    background-color: #009879;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.content-form {
+    display: flex;
+    width: 30%;
+    margin:0 auto;
 }
 
-.card {
-  padding: 2em;
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+.form-group label {
+    flex-basis: 30%;
+    text-align: left;
+    margin-right: 10px;
+}
+  
+.form-group input[type="text"] {
+    flex-grow: 1;
+    width: 200px;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.read-the-docs {
-  color: #888;
+.form-group input[type="text"]:focus {
+    border-color: #04c49e;
+    box-shadow: 0 0 8px #fff;
+    outline: none;
+}
+
+.form-group input[type="text"]::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+.form-group input[type="text"]:hover {
+    border-color: #aaa;
+}
+
+@media (max-width: 840px) {
+    .content-form {
+        width: 100%; /* Allows the form to take more space on very small screens */
+    }
+
+    .form-group input[type="text"] {
+        width: 100px;
+    }
+
+    .form-group {
+        align-items: center; /* Centers the form group items on small screens */
+    }
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 200ms ease-in-out;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: red;
+    transform: scale(1.5);
+}
+
+.update-create-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #04c49e;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s;
+    width: 100px;
+    height: 25px;
+    transition: transform 200ms ease-in-out;
+}
+
+.update-create-btn:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+}
+
+/* table styling */
+
+thead th {
+    text-align: center;
+}
+
+.table-container {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+/* General Table Styles */
+.styled-table {
+    border-collapse: collapse;
+    /* margin: 25px 0; */
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Zebra Striping for Rows */
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Hover Effect for Rows */
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Active-row class for highlighting a row */
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+/* Create contact styling */
+.create-contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #009879;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s;
+    width: 220px;
+    padding: 10px;
+    transition: transform 200ms ease-in-out;
+    margin-top: 20px;
+}
+
+.create-contact:hover {
+    transform: scale(1.1);
+    background-color: #04c49e;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+}
+
+.actions button {
+    display: inline;
+    margin: 5px;
+    padding: 6px;
+    background-color: #009879;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+    transition: transform 200ms ease-in-out;
+}
+
+.actions .update:hover {
+    transform: scale(1.1);
+    background-color: #04c49e;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+}
+
+.actions .delete {
+    background-color: #FF0000;
+}
+
+.actions .delete:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
 }
