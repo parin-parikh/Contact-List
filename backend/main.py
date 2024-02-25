@@ -62,18 +62,3 @@ if __name__ == "__main__":
         db.create_all()
 
     app.run(debug=True)
-
-
-
-
-# Create
-# localhost:5000/create_contact
-
-# Read
-# localhost:5000/read_contact
-
-# Update
-# localhost:5000/update_contact
-
-# Delete
-# localhost:5000/delete_contact
