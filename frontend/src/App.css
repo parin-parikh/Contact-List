@@ -66,7 +66,7 @@ h2 {
 
 @media (max-width: 840px) {
     .content-form {
-        width: 100%; /* Allows the form to take more space on very small screens */
+        width: 100%;
     }
 
     .form-group input[type="text"] {
@@ -74,7 +74,7 @@ h2 {
     }
 
     .form-group {
-        align-items: center; /* Centers the form group items on small screens */
+        align-items: center;
     }
 }
 
@@ -132,11 +132,8 @@ h2 {
     text-align: center;
 }
 
-
-/* General Table Styles */
 .styled-table {
     border-collapse: collapse;
-    /* margin: 25px 0; */
     font-size: 0.9em;
     min-width: 400px;
     border-radius: 5px 5px 0 0;
@@ -160,23 +157,19 @@ h2 {
     border-bottom: 1px solid #dddddd;
 }
 
-/* Zebra Striping for Rows */
 .styled-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
 
-/* Hover Effect for Rows */
 .styled-table tbody tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Active-row class for highlighting a row */
 .styled-table tbody tr.active-row {
     font-weight: bold;
     color: #009879;
 }
 
-/* Create contact styling */
 .create-contact {
     display: flex;
     text-align: center;
