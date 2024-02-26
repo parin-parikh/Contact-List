@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project is a contact list application that allows users to create, read, update, and delete contacts. It features a user-friendly interface where contacts are displayed in a table with options to update or delete each contact. The update function is facilitated through a modal popup form, pre-filled with the contact's current information for easy editing. This application is built using Flask for the backend, SQLAlchemy as an ORM for database interactions, and React for the frontend. Flask-CORS is also utilized to handle cross-origin requests.
+This project is my first full-stack application—a contact list application that allows users to create, read, update, and delete contacts. It features a user-friendly interface where contacts are displayed in a table with options to update or delete each contact. The update function is facilitated through a modal popup form, pre-filled with the contact's current information for easy editing. This application is built using Flask for the backend, SQLAlchemy as an ORM for database interactions, and React for the frontend. Flask-CORS is also utilized to handle cross-origin requests.
+
+One of the most challenging aspects of this project was establishing a connection between the backend and the frontend, along with making changes to the database. This learning experience was invaluable in understanding the full scope of full-stack development.
 
 ## Getting Started
 
