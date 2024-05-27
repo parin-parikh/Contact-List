@@ -73,6 +73,6 @@ First, clone this repository to your local machine. Then, navigate to the projec
 - `frontend/`: Contains React application files and components.
 - `config.py`: SQLALCHEMY database
 
-## Contributing
+## Image
+![alt text](https://cdn.discordapp.com/attachments/945040077455773839/1244785065242656818/contact-list.PNG?ex=66565fee&is=66550e6e&hm=6ab3f9a449ecb43f060c7bf65a7f6b55418da516278953ee96e9e6360e46944a&)
 
-Contributions to this project are welcome! Please fork the repository and submit a pull request with your proposed changes.
